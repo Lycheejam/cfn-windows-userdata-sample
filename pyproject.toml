@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ansible-playbook-windows-sample"
+version = "0.1.0"
+description = ""
+authors = ["Lycheejam <lycheejamwow@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+yamllint = "^1.27.1"
+cfn-lint = "^0.61.5"
+pre-commit = "^2.20.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
