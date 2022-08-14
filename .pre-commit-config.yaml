@@ -6,7 +6,7 @@ repos:
         name: cfn-lint
         entry: cfn-lint
         language: python
-        files: cloudformation/templates/.*\.yml$
+        files: templates/.*\.yml$
   - repo: local
     hooks:
       - id: yamllint
