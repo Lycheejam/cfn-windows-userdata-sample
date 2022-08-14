@@ -13,7 +13,7 @@ Parameters:
     Default: ami-04ac1ccf3fe61134b
   InstanceType:
     Type: String
-    Default: t3.nano
+    Default: t3.medium
   VolumeSize:
     Type: Number
     Default: 50
