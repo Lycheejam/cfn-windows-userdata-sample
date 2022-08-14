@@ -269,6 +269,17 @@ Resources:
       RuleAction: allow
       RuleNumber: 999
 
+  SubnetNetworkAclAssociationPublicA:
+    Type: AWS::EC2::SubnetNetworkAclAssociation
+    Properties:
+      NetworkAclId: !Ref NetworkAcl
+      SubnetId: !Ref PublicSubnetA
+  SubnetNetworkAclAssociationPublicC:
+    Type: AWS::EC2::SubnetNetworkAclAssociation
+    Properties:
+      NetworkAclId: !Ref NetworkAcl
+      SubnetId: !Ref PublicSubnetC
+
   DHCPOptions:
     Type: AWS::EC2::DHCPOptions
     Condition: IsCreateDhcpOptions
