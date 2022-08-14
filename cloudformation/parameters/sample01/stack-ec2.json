@@ -1,0 +1,10 @@
+{
+  "StackName": "stack-sample01-ec2",
+  "Parameters": [
+    {
+      "ParameterKey": "Environment",
+      "ParameterValue": "sample01"
+    }
+  ],
+  "ChangeSetName": "change-set"
+}
