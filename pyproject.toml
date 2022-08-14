@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "ansible-playbook-windows-sample"
+name = "cfn-windows-userdata-sample"
 version = "0.1.0"
 description = ""
 authors = ["Lycheejam <lycheejamwow@gmail.com>"]
