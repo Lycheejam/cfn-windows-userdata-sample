@@ -25,6 +25,10 @@ Resources:
           FromPort: 22
           ToPort: 22
           CidrIp: !Ref HomeCidr
+        - IpProtocol: tcp
+          FromPort: 3306
+          ToPort: 3306
+          CidrIp: !Ref HomeCidr
       Tags:
         - Key: Name
           Value: !Join ['-', [!Ref Environment, public-sg]]
