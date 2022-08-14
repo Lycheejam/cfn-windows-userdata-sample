@@ -49,6 +49,16 @@ Resources:
         - Fn::ImportValue: !Sub ${Environment}-public-sg
       SubnetId:
         Fn::ImportValue: !Sub ${Environment}-subnet-public-a
+      UserData:
+        Fn::Base64: |
+          <powershell>
+          $url = "https://raw.githubusercontent.com/ansible/ansible/devel/examples/scripts/ConfigureRemotingForAnsible.ps1"
+          $file = "$env:TEMP\ConfigureRemotingForAnsible.ps1"
+
+          Invoke-WebRequest $url -OutFile $file
+
+          powershell.exe -ExecutionPolicy ByPass -File $file
+          </powershell>
       Tags:
         - Key: Name
           Value: !Join ['-', [!Ref Environment, instance01]]
