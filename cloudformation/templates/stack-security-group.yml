@@ -26,8 +26,8 @@ Resources:
           ToPort: 22
           CidrIp: !Ref HomeCidr
         - IpProtocol: tcp
-          FromPort: 3306
-          ToPort: 3306
+          FromPort: 3389
+          ToPort: 3389
           CidrIp: !Ref HomeCidr
       Tags:
         - Key: Name
